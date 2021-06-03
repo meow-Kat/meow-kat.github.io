@@ -1,0 +1,109 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+i {
+    font-style: normal;
+}
+
+p {
+    margin: 0;
+}
+
+.nav-h {
+    height: 92px;
+}
+
+.my-icon {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-main{
+    background-color: #D1D5DB;
+}
+
+.my-card{
+    background-color:#F3F4F6;
+}
+
+.my-item{
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #4B5563;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.my-text-size-p{
+    font-size: 12px;
+}
+
+.my-item::before{
+    content: '';
+    position: absolute;
+    width: 75%;
+    border: 4px solid #E5E7EB;
+    right: -37%;
+    border-radius: 5px;
+}
+
+
+
+.my-item-last{
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #4B5563;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+.my-shopping{
+    background-color: #6EE7B7;
+    color: #fff;
+}
+
+.my-shopping::after{
+    content: '';
+    position: absolute;
+    width: 37%;
+    border: 4px solid #6EE7B7;
+    right: 0;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.my-shopped{
+    background-color: #6EE7B7;
+    color: #fff;
+}
+
+.my-shopped::after{
+    content: '';
+    position: absolute;
+    width: 75%;
+    border: 4px solid #6EE7B7;
+    right: -37%;
+    z-index: 1;
+    border-radius: 5px;
+}
+
