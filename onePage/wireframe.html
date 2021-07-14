@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Uniqlo Taiwan</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            /* height: 2000px; */
+        }
+
+        .container {
+            max-width: 1768px;
+            padding: 0 5%;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+            letter-spacing: 7px
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+
+        nav .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .btn {
+            font-size: 80px;
+            background-color: white;
+            line-height: 66px;
+            padding: 0 12px;
+            color: #FE0000;
+            border: 2px solid black;
+            display: none;
+            position: fixed;
+            top: 15px;
+        }
+
+        .logo {
+            width: max-content;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .logo-icon {
+            background-image: url(./icon/double\ logo.gif);
+            background-size: cover;
+            background-position: center;
+            width: 154px;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .logo h1 {
+            margin-left: 20px;
+            font-family: "Arial Black", sans-serif;
+            color: #FE0000;
+            font-size: 60px;
+        }
+
+        .banner {
+            width: 100%;
+            height: calc(100vh - 100px - 70px);
+            background-image: url(./img/各種聯名.jpg);
+            background-size: contain;
+            background-position: center;
+        }
+
+        .links {
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            border-bottom: 8px solid #DF0609;
+        }
+
+        .links .container {
+            width: 1768px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .link {
+            color: #FE0000;
+            font-size: larger;
+            font-weight: bolder;
+            background-color: white;
+        }
+
+        .link:hover{
+            color:rgba(0, 0, 0, 0.8);
+            transition: 0.7s;
+            text-shadow: black 0.1em 0.1em 0.2em
+        }
+
+        .parallax {
+            position: relative;
+            background-image: url(./img/羅浮宮1.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: calc(100vh - 70px);
+        }
+
+        .co-branding-grop {
+            position: relative;
+        }
+
+        .co-branding {
+            background-image: url(./img/聯名哥吉拉VS金剛.jpeg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: calc(100vh - 70px);
+            display: flex;
+            align-items: center;
+        }
+
+
+        .co-branding-text .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            color: whitesmoke;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .co-branding-text .container h1 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+
+        .co-branding-text .container span {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 5px;
+            line-height: 36px;
+            font-size: larger;
+            background-color: rgba(12, 12, 12, 0.6);
+            padding: 30px;
+            border-radius: 25px;
+        }
+
+        .co-branding-text .container span:hover {
+            background-color: rgba(12, 12, 12, 0.9);
+            transition: 1s;
+            color: snow;
+        }
+
+        .shop {
+            position: relative;
+            background-color: #f4f4f4;
+        }
+
+        .shop .container {
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .product {
+            width: 48%;
+            height: calc(100vh - 70px);
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .shop2 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .product-pic {
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
+            border-radius: 50px;
+            border: 2px double rgb(194, 84, 84);
+        }
+
+        .product-pic:hover {
+            border-radius: 25%;
+            opacity: 0.8;
+            transition: 1s;
+        }
+
+
+
+        .pic1 {
+            background-image: url(./img/交錯1.png);
+        }
+
+        .pic2 {
+            background-image: url(./img/交錯2.png);
+        }
+
+        .product-text {
+            /* color: #C8C8C8; */
+            letter-spacing: 5px;
+            padding-top: 30px;
+        }
+
+        .shop2 .product-text {
+            padding-top: unset;
+            padding-bottom: 30px;
+        }
+
+        .other {
+            background-color: #f4f4f4;
+            position: relative;
+        }
+
+        .other .container {
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .other-box {
+            width: 30%;
+            padding: 45px 0;
+            height: calc(100vh - 70px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .other-pic {
+            height: 80%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 2px solid transparent;
+        }
+
+        .other-pic:hover {
+            border: 2px solid darkgrey;
+            opacity: 0.8;
+            border-radius: 50% / 10%;
+            transition: 1.3s;
+        }
+
+        .pic3 {
+            background-image: url(./img/left.jpg);
+        }
+
+        .pic4 {
+            background-image: url(./img/minddle.jpg);
+        }
+
+        .pic5 {
+            background-image: url(./img/right.jpg);
+        }
+
+        .other-text {
+            width: 95%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .other-text h3 {
+            margin: 0 0 5px;
+            letter-spacing: 3px;
+        }
+
+        .other-text span {
+            letter-spacing: 1px;
+            height: max-content;
+        }
+
+        footer {
+            height: 50px;
+            background-color: rgba(169, 169, 169, 0.952);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px 25px 0 0;
+        }
+
+        #anchor1 {
+            position: absolute;
+            top: -70px;
+            left: 0;
+
+        }
+
+        #anchor2 {
+            position: absolute;
+            top: -70px;
+            left: 0;
+        }
+
+        #anchor3 {
+            position: absolute;
+            top: -70px;
+            left: 0;
+        }
+
+        #anchor4 {
+            position: absolute;
+            top: -70px;
+            left: 0;
+        }
+
+        @media(max-width:1280px) {
+            .parallax {
+                display: block;
+            }
+
+            .co-branding-text .container h1 {
+                margin-bottom: 15px;
+                font-size: 42px;
+            }
+
+            .co-branding-text .container span {
+                letter-spacing: 3px;
+                line-height: 24px;
+                font-size: smaller;
+            }
+
+            .product {
+                width: 45%;
+                padding: 60px 0;
+            }
+
+
+        }
+
+        @media(max-width:1064px) {
+            .link {
+                font-size: medium;
+                font-weight: bolder;
+            }
+
+            .co-branding-text .container h1 {
+                margin-bottom: 10px;
+                font-size: 24px;
+            }
+
+            .co-branding-text .container span {
+                line-height: 24px;
+                font-size: 14px;
+            }
+
+            .product {
+                padding: 80px 0;
+            }
+        }
+
+        @media(max-width:960px) {
+
+            nav {
+                display: flex;
+            }
+
+            nav .container {
+                align-items: center;
+                margin: auto;
+            }
+
+            .btn {
+                display: block;
+                left: 20px;
+                z-index: 2;
+            }
+
+            .btn:hover+.links {
+                display: block;
+            }
+
+            .links:hover {
+                display: block;
+            }
+
+            .logo {
+                width: max-content;
+                height: 70px;
+                display: flex;
+                align-items: center;
+            }
+
+            .logo-icon {
+                background-image: url(./icon/1200px-UNIQLO_logo.svg_.png);
+                width: 70px;
+                height: 100%;
+            }
+
+            .logo h1 {
+                margin-left: 20px;
+                color: #FE0000;
+                font-size: 36px;
+            }
+
+            .links {
+                width: max-content;
+                height: max-content;
+                display: flex;
+                position: fixed;
+                top: 0;
+                border-bottom: 3px solid #DF0609;
+                padding-top: 100px;
+                display: none;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            
+            .link:hover{
+                background-color:white;
+            }
+
+            .links .container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+            }
+
+            .link {
+                width: 100%;
+                font-weight: bolder;
+                border-bottom: 2px solid;
+                justify-content: center;
+                display: flex;
+                padding: 9px 27px;
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+
+            .banner {
+                height: calc(100vh - 100px);
+            }
+
+            .parallax {
+                height: 100vh;
+            }
+
+            .co-branding-grop {
+                height: 100vh;
+
+            }
+
+            .product {
+                height: 100vh;
+            }
+
+            #anchor1 {
+                position: absolute;
+                top: 0;
+
+            }
+
+            #anchor2 {
+                position: absolute;
+                top: 0;
+            }
+
+            #anchor3 {
+                position: absolute;
+                top: 0;
+            }
+
+            #anchor4 {
+                position: absolute;
+                top: 0;
+            }
+        }
+
+        @media(max-width:780px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .btn {
+                font-size: 50px;
+                background-color: white;
+                line-height: 47px;
+                padding: 0 9px;
+                color: #FE0000;
+                border: 2px solid black;
+                top: 25px;
+            }
+
+            .co-branding-text {
+                height: 50vh;
+                background: rgb(255, 255, 255);
+                background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(250, 244, 232, 1) 100%);
+                display: flex;
+                align-items: center;
+            }
+
+            .co-branding-text .container {
+                width: 100%;
+                flex-direction: column;
+                color: whitesmoke;
+                position: unset;
+                transform: unset;
+                padding: 0 70px;
+            }
+
+            .co-branding-text .container h1 {
+                margin-bottom: 6px;
+                color: #0C0C0C99;
+                letter-spacing: 3px;
+            }
+
+            .co-branding-text .container span {
+                padding: 25px;
+                font-size: 12px;
+                letter-spacing: 1px;
+                border-radius: 10px;
+
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 10;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+                overflow: hidden;
+            }
+
+            .co-branding {
+                height: 50vh;
+                background-attachment: unset;
+            }
+
+
+
+            .product {
+                width: 100%;
+                height: 50vh;
+                padding: 5px;
+            }
+
+
+            .shop2 {
+
+                flex-direction: column;
+            }
+
+            .shop2 .product-text {
+                padding-top: 30px;
+                padding-bottom: 0;
+            }
+
+            .shop .container {
+                flex-direction: column;
+                box-sizing: unset
+            }
+
+            .other {
+                height: 150vh;
+
+            }
+
+
+            .other .container {
+                justify-content: space-between;
+                flex-direction: column;
+                box-sizing: unset;
+            }
+
+            .other-box {
+                padding: 15px 0;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .other-box {
+                width: 100%;
+                height: 50vh;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="btn">≡</div> -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <h1>UT聯名季</h1>
+            </div>
+
+        </div>
+    </nav>
+    <div class="banner"></div>
+    <div class="btn">≡</div>
+    <div class="links">
+        <div class="container">
+            <div class="link">
+                <a href="#anchor1">羅浮宮-聯名UT 即將登場</a>
+            </div>
+            <div class="link">
+                <a href="#anchor2">哥吉拉大戰金剛-聯名UT</a>
+            </div>
+            <div class="link">
+                <a href="#anchor3">《亞麻》單品穿搭</a>
+            </div>
+            <div class="link">
+                <a href="#anchor4">UNIQLO 2021春夏新品</a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="parallax">
+            <div id="anchor1"></div>
+        </div>
+        <div class="co-branding-grop">
+            <div id="anchor2"></div>
+            <div class="co-branding-text">
+                <div class="container">
+                    <h1>《哥吉拉大戰金剛》系列聯名UT</h1>
+                    <span>隨著氣溫回暖，穿著短袖T-Shirts走到街頭的日子又要回歸啦！日本平價服飾UNIQLO今日舉行媒體預覽會並推出2021春夏七大必買聯名UT，其中包括現已於院線上映的《哥吉拉大戰金剛》元素的「GODZILLA’S
+                        WORLD UT」系列以及由日本金屬美學大師空山基重新詮釋《侏儸紀世界》的「Jurassic World X Hajime Sorayama
+                        UT」，一起來瞧瞧！談到哥吉拉，不論是昭和時期、平成時期到由傳奇影業打造的「怪獸宇宙」版本，橫跨兩個世紀的各年齡層「哥粉」想必都有不同感受，這次就在《哥吉拉大戰金剛》上映之時，UNIQLO挾著超夯話題順勢推出「GODZILLA’S
+                        WORLDUT」系列，絕對成為近期最夯的指標性UT。該系列包含男女均可穿的成人裝與童裝系列，上面的印花圖案除了前述的招牌《哥吉拉大戰金剛》外，還有昭和時代的哥吉拉與機械哥吉拉以及1972年發行的哥吉拉漫畫《哥斯拉電擊大作戰》，相信有看過那個時期電影的「哥粉」絕對是滿滿回憶瞬間湧上心頭。成人裝共有六款、童裝四款，將於3月26日正式於全台實體與網路店鋪上架。</span>
+                </div>
+            </div>
+            <div class="co-branding"></div>
+        </div>
+
+        <div class="shop">
+            <div id="anchor3"></div>
+            <div class="container">
+                <div class="product shop1">
+                    <div class="product-pic pic1"></div>
+                    <div class="product-text">舒適的衣服讓人感到安心，本季設計師創作一系列棉麻和嫘縈等柔軟材質單品，讓您舒服地穿梭各種生活場景，藉由打扮綻放自我魅力！</div>
+                </div>
+                <div class="product shop2">
+                    <div class="product-pic pic2"></div>
+                    <div class="product-text">亞麻材質不僅舒適乾爽，加上天然的膚觸質感，帶給人一種輕鬆、精緻的感覺。隨著天氣逐漸回暖，亞麻單品的穿搭季節也即將到來。</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="other">
+            <div id="anchor4"></div>
+            <div class="container">
+                <div class="other-box">
+                    <div class="other-pic pic3"></div>
+                    <div class="other-text">
+                        <h3>寬襬長洋裝</h3>
+                        <span>俐落優雅的垂墜感，讓洋裝可單穿可內搭超實穿。
+                        </span>
+                    </div>
+                </div>
+
+                <div class="other-box">
+                    <div class="other-pic pic4"></div>
+                    <div class="other-text">
+                        <h3>嫘縈亞麻套裝</h3>
+                        <span>中性收腰的窄管褲不僅材質舒適，搭配外套更有氣勢。</span>
+                    </div>
+                </div>
+
+                <div class="other-box">
+                    <div class="other-pic pic5"></div>
+                    <div class="other-text">
+                        <h3>棉麻襯衫</h3>
+                        <span>修飾身形的優雅剪裁，搭配略帶透明感的棉麻材質更加精緻。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <span>© WebDesigner Kevin Cheng 為切版練習使用</span>
+        </div>
+    </footer>
+</body>
+
+</html>
