@@ -1,4 +1,6 @@
 # meow-kat.github.io
+![image](https://meow-kat.github.io/profile/Resume.jpg)
+
 我是鄭凱文
 想應徵的職位是 前端 / 後端 設計工程師。
 履歷在作品集可以直接觀看，Adobe AI 製成。
