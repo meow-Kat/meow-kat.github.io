@@ -3,7 +3,7 @@
 
 我是鄭凱文
 想應徵的職位是 前端 / 後端 設計工程師。
-履歷在作品集可以直接觀看，Adobe AI 製成。
+作品集可以直接觀看，Adobe AI 製成。
 
 2021 年進修「全端工程師班 420 hr」並學習到
 前端：學習 Html 5、Css 3、Javascript ES 6，結合 bootstrapt 4 的元件運用及排版系統，Swiper、DataTable 此外，遇到問題時上網搜尋 CodePen、及閱讀資料解決。
