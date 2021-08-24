@@ -3,7 +3,7 @@
 
 ## 我是鄭凱文
 ### 想應徵的職位是 前端 / 後端 設計工程師。
-#### 程式作品集：[RWD 微軟仿切](https://meow-kat.github.io/microsoft/microsoft_flex.html)、[Boostrap 4 應用](https://meow-kat.github.io/shopping_cart/index.html)、[氣象串接天氣卡](https://meow-kat.github.io/weather/weather-card.html)、[TNR 流浪動物計畫( 進行中 )](https://110-03-sunyehfy-tnr-cat.dev-hub.io/TNR-index)、[一頁式網站](https://meow-kat.github.io/backery/)
+#### 程式作品集：[RWD 微軟仿切](https://meow-kat.github.io/microsoft/microsoft_flex.html)、[Boostrap 4 應用](https://meow-kat.github.io/shopping_cart/index.html)、[ajax 串接天氣卡](https://meow-kat.github.io/weather/weather-card.html)、[TNR 流浪動物計畫( 進行中 )](https://110-03-sunyehfy-tnr-cat.dev-hub.io/TNR-index)、[一頁式網站](https://meow-kat.github.io/backery/)
 
 
 * TNR流浪動物計畫是由學員團體專題網站製作而成每個人各自分工
