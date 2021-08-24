@@ -7,9 +7,7 @@
 
 
 * TNR流浪動物計畫是由學員團體專題網站製作而成每個人各自分工
-
-
-** 一頁式網站為企劃、設計、程式設計皆由自己獨力完成
+* 一頁式網站為企劃、設計、程式設計皆由自己獨力完成
 
 #### 畫面作品集：[個人履歷 ( AI )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/Resume.jpg)、[Matte Painting ( PS )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/city-text.jpg)、[Low poly ( AI )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/low%20poly.jpg)、[婚紗修圖( PS )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/wedding.jpg)
 
