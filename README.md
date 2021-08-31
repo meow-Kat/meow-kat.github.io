@@ -11,7 +11,7 @@
 
 #### 畫面作品集：[個人履歷 ( AI )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/Resume.jpg)、[Matte Painting ( PS )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/city-text.jpg)、[Low poly ( AI )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/low%20poly.jpg)、[婚紗修圖( PS )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/wedding.jpg)
 
-2021 年進修「全端工程師班 420 hr」並學習到
+2021 年進修「全端工程師班」並學習到
 
 
 *前端*： 學習 **Html 5**、**Css 3**、**Javascript ES 6**，結合 **bootstrapt 4** 的元件運用及排版系統，**Swiper**、**DataTable** 此外，遇到問題時上網搜尋 CodePen、及閱讀文獻資料解決。
