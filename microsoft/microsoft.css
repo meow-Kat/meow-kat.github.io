@@ -369,6 +369,10 @@
             font-size: 15px !important;
         }
 
+        .mySwiper {
+            overflow: hidden;
+        }
+
         .swiper-button-next{
             right: 1px !important;
         }
