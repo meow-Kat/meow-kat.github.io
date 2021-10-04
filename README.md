@@ -10,7 +10,9 @@
 
 #### 後端程式作品集 ( 僅提供程式碼 )：[Laravel 應用](https://github.com/meow-Kat/bootstrap_shopping)
 
-#### 畫面作品集：[個人履歷 ( AI )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/Resume.jpg)、[Matte Painting ( PS )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/city-text.jpg)、[Low poly ( AI )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/low%20poly.jpg)、[婚紗修圖( PS )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/wedding.jpg)
+#### 畫面作品集：[個人履歷 ( AI )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/Resume.jpg)、[Matte Painting ( PS )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/city-text.jpg)、[Low poly ( AI )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/low%20poly.jpg)、[婚紗修圖( PS )](https://github.com/meow-Kat/meow-kat.github.io/blob/main/profile/wedding.jpg)、[一頁式網站設計稿 Mokeup](https://www.figma.com/file/Oo0JuGjSV3wtRqcj7p7mtS/Untitled?node-id=51%3A24)
+
+#### 作品集企劃：[一頁式網站企劃](https://docs.google.com/document/d/1CdThrUYwtFZDcJqcjJ7V_QkN5CZYrQ27NB9Coe-6Gww/edit)、[團體專題企畫](https://docs.google.com/document/d/1SLvk3Kvd094ilwhUZzzDo1kmJ9m0cCSjY010JzsOCBw/edit)
 
 2021 年進修「全端工程師班」並學習到
 
